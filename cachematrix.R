@@ -1,7 +1,7 @@
 
 makeCacheMatrix <- function(x = matrix()){
         
-        ## init inverse property
+        ## initiate inverse 
         i <- NULL
         
         ## set the matrix x
@@ -33,10 +33,10 @@ makeCacheMatrix <- function(x = matrix()){
 cacheSolve <- function( x, ...){
         ## Return a matrix that is the inverse of 'x'
         
-        ## the inversion matrix IM of the matrix x
+        ## the inversion matrix of the matrix x
         InverseMatrix <- x$getInverse()
         
-        ## calculation of the inversion matrix IM 
+        ## calculation of the inversion matrix InverseMatrix
         if (is.null(InverseMatrix)) {
                 message('Calculation the inverse...')
                 
